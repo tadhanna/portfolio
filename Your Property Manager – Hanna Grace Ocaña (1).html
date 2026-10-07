@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Short-Term Rental Property Manager &amp; Virtual Assistant | Your Property Manager</title>
+<meta name="description" content="Hanna Grace Ocaña, Your Property Manager: short-term rental property management support and a property management virtual assistant for Airbnb hosts, co-hosts and vacation rental teams.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#18372E;--ivory:#F7F4ED;--gold:#D6C39B;--char:#252A27;--sage:#DDE5DC;
+--bg:var(--ivory);--bg2:var(--sage);--fg:var(--char);--card:#fff;--accent:var(--green);--line:rgba(24,55,46,.15);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12261F;--bg2:#18372E;--fg:#F7F4ED;--card:#1d3d33;--accent:var(--gold);--line:rgba(214,195,155,.25)}}
+:root[data-theme="dark"]{--bg:#12261F;--bg2:#18372E;--fg:#F7F4ED;--card:#1d3d33;--accent:var(--gold);--line:rgba(214,195,155,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;margin:0 0 .5em;color:var(--accent)}
+h1{font-size:clamp(2.6rem,6vw,4.6rem);color:var(--fg)}h2{font-size:clamp(2rem,4vw,3rem)}h3{font-size:1.4rem}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}section{padding:84px 0}.alt{background:var(--bg2)}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;color:var(--accent);font-weight:600;margin-bottom:12px}
+header{position:sticky;top:0;z-index:10;background:var(--green);color:var(--ivory);padding-top:env(safe-area-inset-top,0px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.4rem;text-decoration:none;color:var(--gold)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}nav a{text-decoration:none;font-size:.92rem}nav ul a:hover{color:var(--gold)}
+#menu{display:none;background:none;border:1px solid var(--gold);color:var(--gold);padding:6px 12px;border-radius:6px;font:inherit}
+@media(max-width:780px){#menu{display:block}nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--green);flex-direction:column;padding:16px 20px}nav ul.open{display:flex}}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:600;border:1.5px solid var(--green);transition:transform .2s,background .2s}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px)}.btn.p{background:var(--green);color:var(--ivory)}.btn.p:hover{background:#245244}
+.btn.s{color:var(--green)}:root[data-theme="dark"] .btn.s{color:var(--gold)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.s{color:var(--gold);border-color:var(--gold)}:root:not([data-theme="light"]) .btn.p{background:var(--gold);color:var(--green);border-color:var(--gold)}}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.hero p.lead{font-size:1.15rem;max-width:560px}.ctas{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0}
+.art{background:var(--green);border-radius:200px 200px 16px 16px;padding:28px;box-shadow:0 20px 50px rgba(24,55,46,.25)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}@media(max-width:600px){.facts{grid-template-columns:1fr}}
+.fact{border-left:3px solid var(--gold);padding:4px 12px;font-size:.9rem}.fact b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(24,55,46,.12)}.card p{margin:0;font-size:.95rem}
+.num{color:var(--gold);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{background:var(--bg2);border:1px solid var(--line);padding:4px 12px;border-radius:999px;font-size:.85rem}
+.alt .chip{background:var(--bg)}
+.tag{display:inline-block;background:var(--gold);color:var(--green);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:12px}
+.vis{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px;margin:14px 0;font-size:.8rem}
+.row{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dashed var(--line)}.row:last-child{border:0}
+.ok{color:#2f7a55;font-weight:600}.wait{color:#9a7b2c;font-weight:600}
+.proj h4{margin:12px 0 2px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.tl{border-left:2px solid var(--gold);margin-left:8px}.job{padding:0 0 34px 28px;position:relative}
+.job:before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--bg)}
+.job .when{font-size:.85rem;color:var(--accent);font-weight:600}.job ul{padding-left:18px;margin:8px 0}.job li{margin:4px 0;font-size:.95rem}
+.contact{background:var(--green);color:var(--ivory);text-align:center}.contact h2{color:var(--gold)}.contact p{max-width:620px;margin:0 auto 24px}
+.contact .btn{border-color:var(--gold)}.contact .btn.p{background:var(--gold);color:var(--green)}.contact .btn.s{color:var(--gold)}
+.links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:.95rem}
+footer{background:#10241d;color:var(--ivory);padding:40px 0;font-size:.9rem}
+.fgrid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer a{text-decoration:none;margin-right:16px;color:var(--gold)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="brand" href="#home">Your Property Manager</a>
+<button id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<ul id="links"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+<main>
+<section id="home" style="padding:0"><div class="wrap hero">
+<div class="rv"><p class="eyebrow">Short-Term Rental Property Manager &amp; Virtual Assistant</p>
+<h1>Exceptional Stays. Seamless Operations.</h1>
+<p class="lead">I help Airbnb hosts, co-hosts and property management teams keep listings accurate, guests well looked after and turnovers on schedule, so owners can rely on a calm, organized operation every day.</p>
+<div class="ctas"><a class="btn p" href="#services">Explore My Services</a><a class="btn s" href="#contact">Let's Work Together</a></div>
+<div class="facts" id="facts"></div></div>
+<div class="art rv" aria-hidden="true"><svg viewBox="0 0 320 300" width="100%"><rect width="320" height="300" fill="#18372E"/><circle cx="240" cy="60" r="26" fill="#D6C39B" opacity=".9"/><path d="M40 150 160 60 280 150" fill="none" stroke="#D6C39B" stroke-width="6" stroke-linejoin="round"/><rect x="62" y="150" width="196" height="110" fill="#F7F4ED"/><rect x="82" y="172" width="52" height="40" fill="#DDE5DC"/><rect x="186" y="172" width="52" height="40" fill="#DDE5DC"/><rect x="141" y="198" width="38" height="62" fill="#18372E"/><circle cx="171" cy="232" r="3" fill="#D6C39B"/><rect x="0" y="260" width="320" height="40" fill="#0f2b23"/><path d="M20 260v-30M20 240l-12-10M20 236l12-12" stroke="#DDE5DC" stroke-width="4"/></svg></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap"><p class="eyebrow">About</p><h2>Hands-on short-term rental experience</h2>
+<div class="grid" style="grid-template-columns:1.3fr 1fr;align-items:start">
+<div><p>I'm Hanna Grace Ocaña, a property manager and co-host based in Cavite, Philippines. My property management background includes setting up and managing 35 listings on Airbnb, Booking.com and VRBO, covering daily operations, guest communication and overall platform management.</p>
+<p>I have coordinated cleaners, maintenance vendors and turnovers, kept booking calendars conflict-free, researched markets, prepared owner statements and built the trackers, checklists and SOPs that keep a portfolio organized.</p>
+<p>Alongside that, my customer-facing roles in hotel and casino reservations and in B2B sales support strengthened my communication, record-keeping, quotation accuracy and follow-up discipline.</p></div>
+<div class="card"><h3>What you can expect</h3><div class="chips"><span class="chip">Guest communication</span><span class="chip">Operational coordination</span><span class="chip">Attention to detail</span><span class="chip">Accurate records</span><span class="chip">Timely follow-up</span></div></div></div></div></section>
+
+<section id="services"><div class="wrap"><p class="eyebrow">Services</p><h2>How I can support your rentals</h2><div class="grid" id="services-grid"></div></div></section>
+
+<section class="alt"><div class="wrap"><p class="eyebrow">Software &amp; tools</p><h2>Platforms I have worked with</h2>
+<p>Listed from my resume's software experience; no certifications are implied.</p><div class="grid" id="tools"></div></div></section>
+
+<section id="portfolio"><div class="wrap"><p class="eyebrow">Portfolio</p><h2>Sample workflows</h2>
+<p>These are demonstration projects showing how I would approach common tasks. They are not client work, and they contain no real clients, results or metrics.</p><div class="grid" id="projects"></div></div></section>
+
+<section id="experience" class="alt"><div class="wrap"><p class="eyebrow">Experience</p><h2>Professional timeline</h2><div class="tl" id="jobs"></div></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><p class="eyebrow" style="color:var(--gold)">Contact</p><h2>Let's talk about your operation</h2>
+<p>Whether you need a steadier guest-communication routine, tidier listings, smoother turnovers or clearer owner reporting, tell me what is slowing you down and we can see where I can help.</p>
+<a class="btn p" id="mail" href="#">Email Hanna</a> <a class="btn s" id="tel" href="#">Call or Message</a>
+<div class="links" id="socials"></div></div></section>
+</main>
+<footer><div class="wrap fgrid"><div><strong style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;color:var(--gold)">Your Property Manager</strong><br>Organized operations for memorable stays.<br>Hanna Grace Ocaña · Cavite, Philippines</div>
+<div><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></footer>
+
+<script>
+/* ===== EDIT CONTENT HERE ===== */
+const CONFIG={
+email:"hgmoca11@gmail.com",phone:"+639260560495",
+socials:{linkedin:""}, // paste your LinkedIn URL; empty = hidden
+facts:[["35 listings","set up and managed on Airbnb, Booking.com and VRBO"],["30+ properties","daily operations and guest communication at Medyaf"],["Co-host & manager","listing setup, cleaning and maintenance coordination"]],
+services:[
+["Listing setup","Setting up new properties on Airbnb and connecting them to pricing, channel and smart-lock tools."],
+["Booking platform administration","Managing listings across Airbnb, Booking.com and VRBO, including content and daily platform upkeep."],
+["Guest communication & reservations","Answering inquiries, booking requests and reviews before, during and after each stay."],
+["Calendar & availability","Monitoring reservations and booking calendars to prevent conflicts."],
+["Pricing & market research","Pricing updates plus market research with AirDNA, Awning and Zillow, with revenue projections for prospective properties."],
+["Cleaning, maintenance & turnovers","Scheduling cleaners, coordinating maintenance vendors and finding and interviewing cleaners and handymen."],
+["Owner reporting & documentation","Owner updates, owner statements, performance reports and accurate operational records."],
+["Inventory & supplies","Monthly supply orders and inventory across multiple properties."],
+["SOPs & checklists","Operational trackers, checklists and SOPs for repeatable workflows."]],
+tools:[
+["Booking & channel management",["Airbnb","Booking.com","VRBO/Expedia","Booking Automation"]],
+["Property management systems",["Hostaway","Hospitable","Guesty","Smoobu","TurboTenant","Doorloop"]],
+["Pricing & market research",["PriceLabs","AirDNA","Awning","Zillow"]],
+["Operations & smart-lock",["Turno","Yale Smart Locks","Latch App"]],
+["Productivity & communication",["Google Workspace","Microsoft Office","Canva"]],
+["CRM & business tools",["Salesforce","Oracle"]]],
+projects:[
+{t:"Listing Setup & Optimization",c:"New listings need accurate content, pricing connections and availability before launch.",w:"Setup checklist covering listing content, pricing-tool connection, smart-lock setup and calendar sync.",tl:["Airbnb","PriceLabs","Yale","Hospitable"],v:"Helps every new listing launch consistently.",vis:[["Photos &amp; description","Done"],["Pricing tool connected","Done"],["Smart lock code set","Pending"],["Calendar sync","Pending"]]},
+{t:"Guest Communication Workflow",c:"Guests expect timely replies at every stage of a stay.",w:"Message plan for inquiry, booking, pre-arrival, check-in, stay and checkout, with review follow-up.",tl:["Guesty","Hostaway","Google Workspace"],v:"Designed to keep communication consistent and organized.",vis:[["Inquiry reply","Template"],["Pre-arrival details","Template"],["Mid-stay check-in","Template"],["Review follow-up","Template"]]},
+{t:"Cleaning & Maintenance Tracker",c:"Turnovers and repairs slip when schedules live in scattered messages.",w:"One tracker linking reservations to cleaner schedules, vendor tasks and readiness checks.",tl:["Turno","Google Sheets","Google Workspace"],v:"Designed to make property readiness visible at a glance.",vis:[["Unit A · Cleaning","Scheduled"],["Unit B · Repair","Pending"],["Unit C · Supplies","Ordered"],["Unit D · Ready check","Done"]]},
+{t:"Market Research & Owner Report",c:"Owners and investors want clear, comparable information on a property.",w:"Template pairing market research with revenue projections and a plain-language owner statement.",tl:["AirDNA","Awning","Zillow","Canva"],v:"Designed to turn research into a readable report.",vis:[["Market comparison","Sample"],["Revenue projection","Sample"],["Owner statement","Sample"],["Next steps","Sample"]]}],
+jobs:[
+["Channel Inside Service Sales Representative","Schneider Electric","May 2019 – June 2026",["Managed daily communications with clients, vendors and internal teams, coordinating requests and ensuring timely follow-up and resolution.","Prepared and validated high-value quotations and contracts, maintaining accurate documentation and records.","Made outbound calls to notify customers of upcoming service renewals and ensure timely follow-up.","Monitored and maintained active pipelines, tracking pending requests and activities through completion."]],
+["Customer Service Representative","Alorica","December 2018 – March 2019",["Managed 8 hotel and casino reservations, handling bookings, modifications and cancellations while maintaining accuracy during high-volume operations.","Assisted guests with reservation inquiries, accommodations, amenities and property policies.","Maintained accurate customer and reservation records.","Coordinated booking details and special requests, then followed up to ensure timely resolution."]],
+["Property Manager","Medyaf","March 2017 – December 2018",["Managed daily operations and guest communications across 30+ short-term rental properties.","Coordinated cleaners, maintenance vendors and turnovers for property readiness.","Set up and managed listings using Hospitable, PriceLabs and Yale Smart Locks.","Conducted market research using AirDNA, Awning and Zillow; prepared revenue projections and performance reports.","Maintained owner relationships with updates, concern resolution and owner statements.","Managed inventory, monthly supply orders and vendor coordination.","Developed operational trackers, checklists and SOPs; maintained tax documentation and accurate records."]],
+["STR Lead Property Manager","Winning Management","May 2014 – February 2017",["Handled day-to-day tasks and ordered monthly property supplies and essentials.","Liaised with cleaning companies and scheduled their services.","Researched and mapped profit potential for properties in AirDNA and Zillow.","Addressed guest inquiries, booking requests and reviews before, during and after stays.","Found and interviewed cleaners, handymen and furniture assemblers.","Set up new properties in Airbnb and connected them to PriceLabs, Guesty and Yale."]]]};
+/* ===== RENDER ===== */
+const $=id=>document.getElementById(id),e=s=>s;
+$("facts").innerHTML=CONFIG.facts.map(f=>`<div class="fact"><b>${f[0]}</b>${f[1]}</div>`).join("");
+$("services-grid").innerHTML=CONFIG.services.map((s,i)=>`<article class="card rv"><div class="num">${String(i+1).padStart(2,"0")}</div><h3>${s[0]}</h3><p>${s[1]}</p></article>`).join("");
+$("tools").innerHTML=CONFIG.tools.map(t=>`<div class="card rv"><h3>${t[0]}</h3><div class="chips">${t[1].map(x=>`<span class="chip">${x}</span>`).join("")}</div></div>`).join("");
+$("projects").innerHTML=CONFIG.projects.map(p=>`<article class="card proj rv"><span class="tag">Demonstration project</span><h3>${p.t}</h3>
+<div class="vis" role="img" aria-label="Sample visual">${p.vis.map(r=>`<div class="row"><span>${r[0]}</span><span class="${r[1]=="Done"?"ok":"wait"}">${r[1]}</span></div>`).join("")}</div>
+<h4>Challenge</h4><p>${p.c}</p><h4>Workflow</h4><p>${p.w}</p><h4>Tools</h4><div class="chips">${p.tl.map(x=>`<span class="chip">${x}</span>`).join("")}</div><h4>Intended value</h4><p>${p.v}</p></article>`).join("");
+$("jobs").innerHTML=CONFIG.jobs.map(j=>`<div class="job rv"><h3 style="margin:0">${j[0]}</h3><div class="when">${j[1]} · ${j[2]}</div><ul>${j[3].map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("");
+$("mail").href="mailto:"+CONFIG.email+"?subject=Property%20management%20support%20inquiry";
+$("tel").href="tel:"+CONFIG.phone;
+$("socials").innerHTML=`<a href="mailto:${CONFIG.email}">${CONFIG.email}</a><a href="tel:${CONFIG.phone}">${CONFIG.phone}</a>`+(CONFIG.socials.linkedin?`<a href="${CONFIG.socials.linkedin}" rel="noopener" target="_blank">LinkedIn</a>`:"");
+const m=$("menu"),l=$("links");m.onclick=()=>{const o=l.classList.toggle("open");m.setAttribute("aria-expanded",o)};
+l.onclick=()=>{l.classList.remove("open");m.setAttribute("aria-expanded",false)};
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(x=>io.observe(x));
+</script>
+</body>
+</html>
